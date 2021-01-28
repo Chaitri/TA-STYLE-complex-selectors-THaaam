@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CUSTOM */
+
+body {
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.column {
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #314377;
+}
+
+.btn-secondary {
+    background-color: #59bfc2;
+    color: #fff;
+}
+
+.btn:hover { 
+    box-shadow: 5px 5px 20px #59bfc256;
+}
+
+/* HEADER */
+
+.header {
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar li {
+    margin-left: 2rem;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar li:hover {
+    font-weight: 700;
+}
+
+/* MAIN */
+
+/* HERO */
+
+.hero {
+    padding: 8rem 0;
+    background-color: #59bfc2;
+    color: white;
+    padding-bottom: 23rem;
+
+    position: relative;
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: -14rem;
+    left: 0;
+    width: 100%;
+}
+
+/* FILES */
+
+.files {
+    padding-top: 18rem;
+}
+
+.file-item {
+    padding: 1rem 0;
+}
+
+a[href $= '.pdf'], a[href $= '.doc'], a[href $= '.png'], a[href $= '.mp4']  {
+    font-size: 2rem;
+    color: #bfcae1;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 1rem;
+}
+
+.file-item:hover {
+    box-shadow: 0 8px 10px -7px #bfcae181;
+}
+
+/* INTRO */
+
+.intro {
+    padding: 3rem 0;
+}
+
+.intro hr {
+    border-top: 2px solid #bfd1f6;
+}
+
+.content {
+    padding-top: 5rem;
+}
+
+.content article {
+    width: 45%;
+}
+
+.content img {
+    width: 50%;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #283e7d;
+}
+
+.content p {
+    color: #7084b0;
+    font-weight: 500;
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+.content a {
+    padding: 0.5rem 1rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 0;
+}
+
+.content a:hover {
+    box-shadow: none;
+    text-decoration: underline #fff;
+}
+
+.learn-more {
+    position: relative;
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+.content a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  
+  border-left: 1.2rem solid #fff;
+  border-top: 1.4rem solid transparent;
+  border-bottom: 1.4rem solid transparent;
+  border-right: 1.4rem solid transparent;
+
+  display: inline-block;
+
+  position: absolute;
+  top:2rem;
+  left: 0;
+}
+
+.content a::after {
+
+  content: "";
+  width: 0px;
+  height: 0px;
+
+
+  border-left: 1.2rem solid #59bfc2;
+  border-top: 1.4rem solid transparent;
+  border-bottom: 1.4rem solid transparent;
+  border-right: 1.4rem solid transparent;
+
+  display: inline-block;
+
+  position: absolute;
+  top:2rem;
+  right: -0.6rem;
+}
+
+/* SCORE */
+
+.score {
+    padding: 5rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+table caption {
+    color: #283e7d;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+table thead {
+    background-color: #3d9ea1;
+}
+
+th {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-right: 5rem;
+}
+
+table td {
+    border: 1px solid #b5bdbd;
+    padding: 1rem 1rem;
+    color: #6b6d70;
+    padding-right: 8rem;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #d5e5e5;
+}
+
+/* PLANS */
+
+.plans {
+    padding: 2rem 0;
+}
+
+.plans h2 {
+    color: #283e7d;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.time-item {
+    font-weight: 700;
+    margin: 0 1rem;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bbecec;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "|";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #59bfc2;
+    transition: .4s;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+input:checked + .slider {
+    background-color: #bbecec;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #bbecec;
+}
+
+input:checked + .slider:before {
+    transform: translateX(46px);
+}
+
+.plan-cards {
+    margin: 5rem 0;
+}
+
+.card {
+    border: 5px solid #e8eefb;
+    border-radius: 1.2rem;
+    width: 38%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 1rem 0;
+}
+
+.card p {
+    color: #7084b0;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.card h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #59bfc2;
+}
+
+.card h3::before {
+    content: "$";
+    color: #59bfc2;
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.card h3::after {
+    content: "/Month";
+    color: #7084b0;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.card hr {
+    border-top: 1px solid #bfd1f6;
+}
+
+.features {
+    margin: 2rem 0;
+}
+
+.features li {
+    list-style: inside url("./assets/tick.png");
+    text-align: left;
+    margin: 1rem 0;
+    font-weight: 700;
+    color: #42517b;
+}
+
+.features .not-included {
+    list-style: inside url("./assets/cross.png");
+    color: #97a6c6;
+}
+
+.card a {
+    font-weight: 500;
+    width: 100%;
+    padding: 0.5rem 0;
+    border: 2px solid #c7d4f1;
+    margin-bottom: 2rem;
+}
+
+/* TRIAL */
+
+.trial {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #59bfc2;
+    border-radius: 2rem;
+}
+
+.trial h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.trial a {
+    width: 20%;
+    margin-top: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 3rem 0;
+}
+
+.footer-item:first-child {
+    width: 25%;
+}
+
+.footer-item:first-child ul {
+    margin-top: 1rem;
+    width: 60%;
+}
+
+.footer-item:first-child ul li a{
+    border-radius: 50%;
+    background-color: #59bfc2;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}
+
+.footer-item h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #283e7d;
+}
+
+.footer-item p {
+    color: #7084b0;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.footer-item li {
+    
+    font-weight: 500;
+    margin: 0.5rem 0;
+    
+}
+
+.footer-item li a {
+    text-decoration: none;
+    color: #7084b0;
+}
+
+.footer-item li a:hover {
+    text-decoration: underline;
+}
