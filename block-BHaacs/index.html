@@ -15,6 +15,10 @@
             <div class="logo">
                 <a href="#">TrackL</a>
             </div>
+            <label class="bars" for="menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu">
             <nav class="nav-bar">
                 <ul class="flex">
                     <li>
@@ -44,7 +48,7 @@
             </div>
         </section>
 
-        <section class="files container flex">
+        <section class="files container flex column-media">
             <div class="file-item flex">
                 <img src="assets/pdf.png" alt="pdf image">
                 <a href="#.pdf">PDF File</a>
@@ -65,7 +69,7 @@
         
         <section class="intro container">
             <hr>
-            <div class="content flex align-stretch">
+            <div class="content flex align-stretch column-media col-reverse center">
                 <article>
                     <h2>Monitor Your Learning <br>And Improve It</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus corporis nesciunt, ipsum, reprehenderit ea facilis sequi libero in architecto voluptatum sapiente.</p>
@@ -79,61 +83,64 @@
 
         <section class="score container center">
             
-            <table>
-                <caption>Weekly Score</caption>
-                <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Course</th>
-                        <th>Score (0 - 100)</th>
-                        <th>Hour Spent</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>Product Design</td>
-                        <td>40</td>
-                        <td>2 Hour 30 Min</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>Product Design</td>
-                        <td>40</td>
-                        <td>2 Hour 30 Min</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>Data Science</td>
-                        <td>20</td>
-                        <td>1 Hour 30 Min</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>UI Design</td>
-                        <td>60</td>
-                        <td>2 Hour 20 Min</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>UX Design</td>
-                        <td>30</td>
-                        <td>2 Hour 30 Min</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>Data Science</td>
-                        <td>50</td>
-                        <td>2 Hour 40 Min</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>HTML & CSS</td>
-                        <td>70</td>
-                        <td>3 Hour 30 Min</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table>
+                    <caption>Weekly Score</caption>
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Course</th>
+                            <th>Score (0 - 100)</th>
+                            <th>Hour Spent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Product Design</td>
+                            <td>40</td>
+                            <td>2 Hour 30 Min</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Product Design</td>
+                            <td>40</td>
+                            <td>2 Hour 30 Min</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Data Science</td>
+                            <td>20</td>
+                            <td>1 Hour 30 Min</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>UI Design</td>
+                            <td>60</td>
+                            <td>2 Hour 20 Min</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>UX Design</td>
+                            <td>30</td>
+                            <td>2 Hour 30 Min</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Data Science</td>
+                            <td>50</td>
+                            <td>2 Hour 40 Min</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>HTML & CSS</td>
+                            <td>70</td>
+                            <td>3 Hour 30 Min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         </section>
 
         <section class="plans container">
@@ -149,7 +156,7 @@
                 </div>
             </div>
             
-            <div class="plan-cards flex">
+            <div class="plan-cards flex column-media">
                 <div class="card basic">
                     <h2>Basic</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit nisi ipsa.</p>
@@ -187,7 +194,7 @@
         </section>
     </main>
 
-    <footer class="footer container flex align-start">
+    <footer class="footer container flex align-start flex-wrap">
         <div class="footer-item">
             <h3>TrackL</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
